@@ -1,0 +1,23 @@
+:root {
+
+    --white: #FFFFFF;
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+textarea{
+    font-family: 'Roboto', sans-serif;
+}
