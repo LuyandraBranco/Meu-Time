@@ -1,8 +1,17 @@
 :root {
 
     --white: #FFFFFF;
+    --green-500: #38B000;
+    --green-400: #70E000;
+    --green-300: #9EF01A;
+    --gray-100: #F5F5F5;
+    --gray-150: #DDD;
+    --gray-700: #333;
+
     --font-weight-400: 400;
+    --font-weight-500: 500;
     --font-weight-600: 600;
+    --font-weight-700: 700;
 
 }
 
@@ -13,11 +22,11 @@
 }
 
 body {
-    background: var(--white);
+    background: var(--gray-100);
     -webkit-font-smoothing: antialiased;
 }
 
 body,
 textarea{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
