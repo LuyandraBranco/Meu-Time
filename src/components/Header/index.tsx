@@ -1,6 +1,8 @@
 import React from 'react';
 import {
-    ContainerHeader
+    ContainerHeader,
+    ItemLogo,
+    Logo
 }
     from './styles';
 
@@ -9,7 +11,10 @@ export default function Header() {
 
     return (
         <ContainerHeader>
-           
+            <ItemLogo>
+                    <IoIosFootball />
+                    <Logo>MeuTime</Logo>
+                </ItemLogo>
         </ContainerHeader>
     )
 }
