@@ -36,7 +36,7 @@ export default function Country() {
                         <Option>--Selecione o país</Option>
                     </Select>
                     <Button>
-                        <HyperLink to="/Country">Seguinte </HyperLink>
+                        <HyperLink to="/League">Seguinte </HyperLink>
                         <AiOutlineArrowRight />
                     </Button>
                 </ItemSelect>
