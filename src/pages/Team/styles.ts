@@ -11,8 +11,8 @@ export const ContainerTeam = styled.div`
 
 export const ContainerSelect = styled(ContainerTeam )`
     
-    width: 50%;
-    height: 25rem;
+    width: 70%;
+    height: 80vh;
     margin: 0 auto;
     margin-top: 4%;
     border-radius: 0.2rem;
@@ -45,48 +45,6 @@ export const Description = styled.p`
     
 `;
 
-export const ItemSelect = styled(ContainerTeam )`
-    
-    width: 95%;
-    height: 9rem;
-    margin-top: 2%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-`;
-
-export const Select = styled.select`
-
-    width: 48%;
-    padding: 1rem;
-    color: var(--gray-700);
-    margin-right: 0.5rem;
-    
-`;
-export const Option = styled.option`
-
-`;
-
-export const Button = styled.button`
-
-    width: 48%;
-    padding: 0.97rem;
-    font-size: 1.1rem;
-    color: var(--white);
-    background: var(--green-500);
-    border: none;
-    cursor: pointer
-    
-`;
-
-export const HyperLink = styled(Link)`
-
-    text-decoration: none;    
-    color:  var(--white);
-    
-`;
-
 export const HyperLink1 = styled(Link)`
 
     text-decoration: none;    
@@ -105,3 +63,13 @@ export const Back = styled.div`
    height: 3rem;
     
 `;
+
+export const Table = styled.div`
+
+   width: 80%;
+   height: 40rem;
+   margin: 0 auto;
+   background: red;
+   margin: 2rem 0;
+`;
+
