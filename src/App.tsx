@@ -6,7 +6,7 @@ import SignIn from './pages/SignIn';
 import Team from './pages/Team';
 import Country from './pages/Country';
 import Details from './pages/Details';
-import League from './pages/Details';
+import League from './pages/League';
 import Season from './pages/Details';
 
 function App() {

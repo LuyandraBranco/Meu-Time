@@ -7,7 +7,6 @@ export const ContainerLeague = styled.div`
     height: 100vh;
     display: flex;
     flex-direction: column;
-    
 `;
 
 export const ContainerSelect = styled(ContainerLeague)`
@@ -78,11 +77,6 @@ export const Button = styled.button`
     background: var(--green-500);
     border: none;
     cursor: pointer
-
-    >svg{
-        
-    }
-   
     
 `;
 
@@ -90,5 +84,24 @@ export const HyperLink = styled(Link)`
 
     text-decoration: none;    
     color:  var(--white);
+    
+`;
+
+export const HyperLink1 = styled(Link)`
+
+    text-decoration: none;    
+    color:  var(--green-500);
+
+    >svg{
+        margin-left: 2rem;
+        font-size: 0.9rem;
+   }
+    
+`;
+
+export const Back = styled.div`
+
+   width: 100%;
+   height: 3rem;
     
 `;

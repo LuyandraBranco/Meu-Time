@@ -9,12 +9,17 @@ import {
     Select,
     Option,
     Button,
-    HyperLink
+    HyperLink,
+    HyperLink1,
+    Back
 
 }
     from './styles';
 import Header from '../../components/Header';
-import { AiOutlineArrowRight } from 'react-icons/ai';
+import {
+    AiOutlineArrowRight,
+    AiOutlineArrowLeft
+} from 'react-icons/ai';
 
 export default function League() {
 
@@ -25,9 +30,11 @@ export default function League() {
                 <TextArea>
                     <Title>Selecione a liga</Title>
                     <Description>
-                        Explore o emocionante mundo do futebol
-                        com nosso aplicativo exclusivo! Selecione o país desejado
-                        e mergulhe na paixão do futebol.
+                        Nossa plataforma oferece cobertura completa da Liga
+                        [Nome da Liga], permitindo que os fãs acompanhem
+                        de perto cada rodada, resultados,
+                        classificação, estatísticas
+                        e informações detalhadas sobre os times e jogadores.
                     </Description>
                 </TextArea>
                 <ItemSelect>
@@ -36,10 +43,14 @@ export default function League() {
                         <Option>--Selecione a liga</Option>
                     </Select>
                     <Button>
-                        <HyperLink to="/Country">Seguinte </HyperLink>
+                        <HyperLink to="/Team">Seguinte </HyperLink>
                         <AiOutlineArrowRight />
                     </Button>
                 </ItemSelect>
+                <Back>
+                    <HyperLink1 to="/Country"><AiOutlineArrowLeft /> Voltar </HyperLink1>
+                </Back>
+
             </ContainerSelect>
         </ContainerLeague>
     )

@@ -31,7 +31,7 @@ export default function Login() {
                 <Title>SIGN IN</Title>
                 <Input type="number" placeholder='Digite a sua key' />
                 <Button>Entrar</Button>
-                <Span>Não tem uma conta? <HyperLink to="/Country">Registre-se</HyperLink></Span>
+                <Span>Não tem uma conta? <HyperLink to="/League">Registre-se</HyperLink></Span>
             </Form>
         </ContainerLogin>
     )
