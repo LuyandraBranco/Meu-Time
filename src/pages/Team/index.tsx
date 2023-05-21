@@ -9,7 +9,6 @@ import {
     HyperLink1,
     Back,
     Table
-
 }
     from './styles';
 import {
@@ -37,14 +36,10 @@ export default function Team() {
                 <Table>
                     <ItemTable nameTeam={"Barcelona"} pathImage={"luyandra"}/>
                     <ItemTable nameTeam={"Real Madrid"} pathImage={"luyandra"}/>
-                    <ItemTable nameTeam={"Barcelona"} pathImage={"luyandra"}/>
-                    <ItemTable nameTeam={"Real Madrid"} pathImage={"luyandra"}/>
-                    <ItemTable nameTeam={"Barcelona"} pathImage={"luyandra"}/>
-                    <ItemTable nameTeam={"Real Madrid"} pathImage={"luyandra"}/>
                 </Table>
               
                 <Back>
-                    <HyperLink1 to="/League"><AiOutlineArrowLeft /> Voltar </HyperLink1>
+                    <HyperLink1 to="/Details"><AiOutlineArrowLeft /> Voltar </HyperLink1>
                 </Back>
             </ContainerSelect>
         </ContainerTeam>

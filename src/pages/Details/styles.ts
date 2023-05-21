@@ -16,7 +16,6 @@ export const ContainerPlayers = styled.div`
     height: 35rem;
     margin: 0 auto;
     margin-top: 5%;
-    background: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
