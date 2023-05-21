@@ -4,11 +4,12 @@ import {
     ContainerElements,
     ContainerPlayers,
     HeaderPlayers,
-    Title
+    Title,
+    Players
 }
     from './styles';
 import Header from '../../components/Header';
-import MenuDetails from '../../components/MenuDetails';
+import ItemPlayer from '../../components/ItemPlayer';
 
 export default function Details() {
 
@@ -20,8 +21,14 @@ export default function Details() {
                     <HeaderPlayers>
                         <Title>Lista de Jogadores</Title>
                     </HeaderPlayers>
+                    <Players>
+                        <ItemPlayer namePlayer={"Lionel Messi"} age={35} nacionality={"Argentino"} pathImage={"error"}/>
+                        <ItemPlayer namePlayer={"Lionel Messi"} age={35} nacionality={"Argentino"} pathImage={"error"}/>
+                        <ItemPlayer namePlayer={"Lionel Messi"} age={35} nacionality={"Argentino"} pathImage={"error"}/>
+                        <ItemPlayer namePlayer={"Lionel Messi"} age={35} nacionality={"Argentino"} pathImage={"error"}/>
+                        <ItemPlayer namePlayer={"Lionel Messi"} age={35} nacionality={"Argentino"} pathImage={"error"}/>
+                    </Players>
                 </ContainerPlayers>
-
             </ContainerElements>
         </ContainerDetails>
     )

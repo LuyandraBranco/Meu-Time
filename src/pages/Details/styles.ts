@@ -14,7 +14,7 @@ export const ContainerElements = styled.section`
     width: 89%;
     height: 80vh;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
     background: #ddd;
 `;
@@ -34,10 +34,11 @@ export const HyperLink = styled(Link)`
 
 export const ContainerPlayers = styled.aside`
     
-    width: 30%;
+    width: 35%;
     margin-right: 2%;
-    background: red;
+    heigth: 50rem;
 `;
+
 
 export const HeaderPlayers = styled.div`
     
@@ -46,7 +47,16 @@ export const HeaderPlayers = styled.div`
     border-bottom: 1px solid var(--gray-100);
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
     
+
+`;
+
+export const Players = styled.div`
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
 `;
 
