@@ -19,7 +19,7 @@ export const ContainerElements = styled.section`
     background: #ddd;
 `;
 
-export const TitlePlayers= styled.h1`
+export const TitlePlayers = styled.h1`
 
     color: var(--green-500);
     
@@ -37,7 +37,24 @@ export const ContainerPlayers = styled.aside`
     width: 35%;
     margin-right: 2%;
     heigth: 50rem;
+
 `;
+
+export const ContainerResults = styled(ContainerPlayers)`
+    
+
+`;
+
+
+
+export const ContainerTraining = styled.aside`
+    
+    width: 30%;
+    height: 15rem;
+    margin-right: 4%;
+
+`;
+
 
 
 export const HeaderPlayers = styled.div`
@@ -66,4 +83,15 @@ export const Title = styled.h3`
     margin-left: 2rem;
     
 
+`;
+
+export const Training = styled.div`
+    
+    width: 100%;
+    height: 5rem;
+    background: var(--green-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 `;
