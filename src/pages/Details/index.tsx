@@ -1,22 +1,28 @@
 import React from 'react';
 import {
     ContainerDetails,
+    ContainerElements,
     ContainerPlayers,
-    TitlePlayers
-
-    
+    HeaderPlayers,
+    Title
 }
     from './styles';
 import Header from '../../components/Header';
+import MenuDetails from '../../components/MenuDetails';
 
-export default function Details(){
+export default function Details() {
 
-    return(
+    return (
         <ContainerDetails>
-             <Header/>
-             <ContainerPlayers>
-                <TitlePlayers>Lista de Jogadores</TitlePlayers>
-             </ContainerPlayers>
+            <Header/>
+            <ContainerElements>
+                <ContainerPlayers>
+                    <HeaderPlayers>
+                        <Title>Lista de Jogadores</Title>
+                    </HeaderPlayers>
+                </ContainerPlayers>
+
+            </ContainerElements>
         </ContainerDetails>
     )
 }

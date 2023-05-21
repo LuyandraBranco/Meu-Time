@@ -6,7 +6,7 @@ import {
     from './styles';
 
 import { IoIosFootball } from 'react-icons/io';
-export default function Header() {
+export default function MenuDetails() {
 
     return (
         <Container>
