@@ -95,6 +95,7 @@ export const HyperLink = styled(Link)`
     font-weight: var(--font-weight-500);
 
 `;
+
 export const Title = styled.h1`
 
     margin-top: 2rem;

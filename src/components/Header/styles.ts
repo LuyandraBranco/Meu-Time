@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerHeader = styled.div`
     
     width: 100%;
-    height: 3.9rem;
+    height: 4rem;
     display: flex;
     background: var(--green-500);
     align-items: center;

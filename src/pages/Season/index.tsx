@@ -4,6 +4,8 @@ import Header from '../../components/Header';
 export default function Season(){
 
     return(
-        <></>
+        <>
+             <Header/>
+        </>
     )
 }
