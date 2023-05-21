@@ -15,6 +15,7 @@ import {
 import {
     AiOutlineArrowLeft
 } from 'react-icons/ai';
+import ItemTable from '../../components/ItemTable';
 
 export default function Team() {
 
@@ -34,6 +35,12 @@ export default function Team() {
                     </Description>
                 </TextArea>
                 <Table>
+                    <ItemTable nameTeam={"Barcelona"} pathImage={"luyandra"}/>
+                    <ItemTable nameTeam={"Real Madrid"} pathImage={"luyandra"}/>
+                    <ItemTable nameTeam={"Barcelona"} pathImage={"luyandra"}/>
+                    <ItemTable nameTeam={"Real Madrid"} pathImage={"luyandra"}/>
+                    <ItemTable nameTeam={"Barcelona"} pathImage={"luyandra"}/>
+                    <ItemTable nameTeam={"Real Madrid"} pathImage={"luyandra"}/>
                 </Table>
               
                 <Back>

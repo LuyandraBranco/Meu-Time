@@ -12,9 +12,9 @@ export const ContainerTeam = styled.div`
 export const ContainerSelect = styled(ContainerTeam )`
     
     width: 70%;
-    height: 80vh;
+    height: 82vh;
     margin: 0 auto;
-    margin-top: 4%;
+    margin-top: 2%;
     border-radius: 0.2rem;
     justify-content: center;
     align-items: center;
@@ -28,6 +28,7 @@ export const TextArea = styled(ContainerTeam )`
     height: 9rem;
     justify-content: center;
     align-items: center;
+    margin-top: 3%;
 
 `;
 
@@ -61,6 +62,7 @@ export const Back = styled.div`
 
    width: 100%;
    height: 3rem;
+   margin-bottom: 2rem;
     
 `;
 
@@ -69,7 +71,7 @@ export const Table = styled.div`
    width: 80%;
    height: 40rem;
    margin: 0 auto;
-   background: red;
    margin: 2rem 0;
+   overflow-y: scroll;
 `;
 
