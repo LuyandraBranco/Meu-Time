@@ -8,11 +8,13 @@ import {
     Players,
     ContainerTraining,
     Training,
-    ContainerResults
+    ContainerResults,
+    Results
 }
     from './styles';
 import Header from '../../components/Header';
 import ItemPlayer from '../../components/ItemPlayer';
+import ItemResult from '../../components/ItemResult';
 
 export default function Details() {
 
@@ -47,7 +49,10 @@ export default function Details() {
                         <Title>Resultados</Title>
                     </HeaderPlayers>
                     <Results>
-                        
+                        <ItemResult nameResult={"Total de jogos"} numberResult={30}/>
+                        <ItemResult nameResult={"Total de vitórias"} numberResult={28}/>
+                        <ItemResult nameResult={"Total de derrotas"} numberResult={4}/>
+                        <ItemResult nameResult={"Total de empates"} numberResult={4}/>
                     </Results>
                 </ContainerResults>
 

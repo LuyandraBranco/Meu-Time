@@ -41,15 +41,16 @@ export const ContainerPlayers = styled.aside`
 `;
 
 export const ContainerResults = styled(ContainerPlayers)`
-    
 
+    width: 40%;
+    
 `;
 
 
 
 export const ContainerTraining = styled.aside`
     
-    width: 30%;
+    width: 20%;
     height: 15rem;
     margin-right: 4%;
 
@@ -93,5 +94,16 @@ export const Training = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+`;
+
+export const Results = styled.div`
+    
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     
 `;
