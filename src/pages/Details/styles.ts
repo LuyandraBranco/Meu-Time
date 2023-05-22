@@ -15,6 +15,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width: 680px) {
+        width: 100%;
+        height: 38rem;
+    }
+
 `;
 
 export const ContainerItem = styled.div`
@@ -32,6 +37,17 @@ export const ContainerElements = styled.section`
     margin-top: 3%;
     display: flex;
     margin-bottom: 4%;
+
+    @media screen and (max-width: 680px) {
+        height: 300vh;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    @media (min-width: 681px) and (max-width: 992px) {      
+        
+    }
 
 `;
 
@@ -54,6 +70,11 @@ export const ContainerPlayers = styled.aside`
     margin-right: 2%;
     heigth: 50rem;
     border: 1px solid var(--gray-150);
+
+    @media screen and (max-width: 680px) {
+        width: 100%;
+        height: 38rem;
+    }
 
 `;
 

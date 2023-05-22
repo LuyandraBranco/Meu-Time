@@ -8,6 +8,7 @@ import {
     Input,
     Button,
     HyperLink,
+    HyperLink1,
     Span,
     Title,
     ItemLogo
@@ -29,9 +30,9 @@ export default function Login() {
             </ContainerLogo>
             <Form>
                 <Title>SIGN IN</Title>
-                <Input type="number" placeholder='Digite a sua key' required/>
-                <Button>Entrar</Button>
-                <Span>Não tem uma conta? <HyperLink to="/Country">Registre-se</HyperLink></Span>
+                <Input type="text" placeholder='Digite a sua key' required/>
+                <Button><HyperLink to="/Country">Entrar</HyperLink></Button>
+                <Span>Não tem uma conta? <HyperLink1 href="https://dashboard.api-football.com/register">Registre-se</HyperLink1></Span>
             </Form>
         </ContainerLogin>
     )

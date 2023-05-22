@@ -124,6 +124,14 @@ export const Button = styled.button`
 export const HyperLink = styled(Link)`
 
     text-decoration: none;    
+    color:  var(--white);
+    font-weight: var(--font-weight-500);
+
+`;
+
+export const HyperLink1 = styled.a`
+
+    text-decoration: none;    
     color:  var(--green-500);
     font-weight: var(--font-weight-500);
 

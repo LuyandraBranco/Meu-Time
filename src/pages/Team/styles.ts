@@ -17,10 +17,6 @@ export const ContainerElements = styled(ContainerTeam)`
     @media screen and (max-width: 680px) {
         height: 90vh;
     }
-
-    @media (min-width: 681px) and (max-width: 992px) {      
-        
-    }
     
 `;
 
