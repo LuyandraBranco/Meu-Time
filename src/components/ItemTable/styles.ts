@@ -6,14 +6,10 @@ export const Container = styled.div`
     width: 100%;
     height: 6rem;
     display: flex;
-    border-top: 1px solid #ddd;
-    border: 1px solid #ddd;
+    border-top: 1px solid var(--gray-150);
+    border: 1px solid var(--gray-150);
     margin-bottom: 0.8rem;
     cursor: pointer;
-
-    :&hover{
-        background: #f5f5f5;
-    }
 
 `;
 

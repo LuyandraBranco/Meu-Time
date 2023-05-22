@@ -10,6 +10,10 @@ export const ContainerLogin = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 680px) {
+        flex-direction: column;
+        height: 85vh;      
+    }
     
 `;
 
@@ -21,7 +25,13 @@ export const ContainerLogo = styled.div`
     margin-right: 6rem;
     flex-direction:column;
     margin-top: 5%;
-    
+
+    @media screen and (max-width: 680px) {
+        width: 100%;
+        margin: 10% 6% 0 0;
+        justify-content: center;
+        align-items: center;
+    }
     
 `;
 
@@ -33,8 +43,15 @@ export const ItemLogo = styled.div`
         color: var( --green-500);
         font-size: 4rem;
         margin-right: 1rem;
-        margin-top: -0.5rem;
-    }
+        margin-top: -0.6rem;
+        margin-left: 10%;
+
+        @media screen and (max-width: 680px) {
+            margin-left: 0;
+            font-size: 3rem;
+            margin-top: -0.2rem;
+        }
+    
 `;
 
 
@@ -48,6 +65,10 @@ export const Form = styled.form`
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
+
+    @media screen and (max-width: 680px) {
+        width: 100%;
+    }
     
 `;
 
@@ -55,6 +76,11 @@ export const Logo = styled.h1`
 
     margin-bottom: 13%;
     color: var(--gray-700);
+
+    @media screen and (max-width: 680px) {
+       margin-bottom: 5%;
+    }
+
     
 `;
 
@@ -62,6 +88,12 @@ export const Description = styled.h1`
 
    color: var(--green-500);
    font-weight: var(--font-weight-700);
+
+   @media screen and (max-width: 680px) {
+        margin-bottom: 5%;
+        font-size: 1.6rem;
+        text-align: center;
+    }
    
 `;
 

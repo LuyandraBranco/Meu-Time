@@ -29,7 +29,7 @@ export default function Login() {
             </ContainerLogo>
             <Form>
                 <Title>SIGN IN</Title>
-                <Input type="number" placeholder='Digite a sua key' />
+                <Input type="number" placeholder='Digite a sua key' required/>
                 <Button>Entrar</Button>
                 <Span>Não tem uma conta? <HyperLink to="/Country">Registre-se</HyperLink></Span>
             </Form>
