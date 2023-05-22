@@ -8,12 +8,15 @@ export const ContainerCountry = styled.div`
     display: flex;
     flex-direction: column;
 
-    
 `;
 
 export const ContainerElements = styled(ContainerCountry)`
     
     height: 35rem;
+
+    @media screen and (max-width: 680px) {
+       height: 45rem;
+    }
     
 `;
 
@@ -27,6 +30,15 @@ export const ContainerSelect = styled(ContainerCountry)`
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 4px var(--green-500);
+
+    @media screen and (max-width: 680px) {
+        width: 95%;
+        box-shadow: none;
+    }
+
+    @media (min-width: 681px) and (max-width: 992px) {      
+        width: 80%;
+    }
 
     
 `;
@@ -63,6 +75,10 @@ export const ItemSelect = styled(ContainerCountry)`
     align-items: center;
     flex-direction: row;
 
+    @media screen and (max-width: 680px) {
+       flex-direction: column;
+    }
+
 `;
 
 export const Select = styled.select`
@@ -71,6 +87,11 @@ export const Select = styled.select`
     padding: 1rem;
     color: var(--gray-700);
     margin-right: 0.5rem;
+
+    @media screen and (max-width: 680px) {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
     
 `;
 export const Option = styled.option`
@@ -85,10 +106,10 @@ export const Button = styled.button`
     color: var(--white);
     background: var(--green-500);
     border: none;
-    cursor: pointer
+    cursor: pointer;
 
-    >svg{
-        
+    @media screen and (max-width: 680px) {
+        width: 90%;
     }
    
     
@@ -98,5 +119,5 @@ export const HyperLink = styled(Link)`
 
     text-decoration: none;    
     color:  var(--white);
-    
+
 `;

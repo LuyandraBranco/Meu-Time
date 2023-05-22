@@ -12,7 +12,7 @@ export const ContainerLogin = styled.div`
 
     @media screen and (max-width: 680px) {
         flex-direction: column;
-        height: 85vh;      
+        height: 115vh;      
     }
     
 `;
@@ -28,7 +28,8 @@ export const ContainerLogo = styled.div`
 
     @media screen and (max-width: 680px) {
         width: 100%;
-        margin: 10% 6% 0 0;
+        height: auto;
+        margin: 30% 0% 10% 0;
         justify-content: center;
         align-items: center;
     }
@@ -67,7 +68,7 @@ export const Form = styled.form`
     border-radius: 0.5rem;
 
     @media screen and (max-width: 680px) {
-        width: 100%;
+        width: 90%;
     }
     
 `;
