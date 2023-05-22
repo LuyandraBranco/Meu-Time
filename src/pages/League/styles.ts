@@ -10,6 +10,11 @@ export const ContainerLeague = styled.div`
 
 `;
 
+export const ContainerElements = styled(ContainerLeague)`
+    
+    height: 35rem;
+    
+`;
 
 export const ContainerSelect = styled(ContainerLeague)`
     

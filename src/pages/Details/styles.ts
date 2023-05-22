@@ -31,6 +31,7 @@ export const ContainerElements = styled.section`
     margin: 0 auto;
     margin-top: 3%;
     display: flex;
+    margin-bottom: 4%;
 
 `;
 

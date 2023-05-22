@@ -11,14 +11,9 @@ export const ContainerCountry = styled.div`
     
 `;
 
-export const ContainerElements = styled.div`
+export const ContainerElements = styled(ContainerCountry)`
     
-    width: 100%;
     height: 35rem;
-    display: flex;
-    flex-direction: column;
-
-
     
 `;
 

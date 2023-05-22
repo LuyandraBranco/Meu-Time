@@ -19,6 +19,7 @@ import Header from '../../components/Header';
 import ItemPlayer from '../../components/ItemPlayer';
 import ItemResult from '../../components/ItemResult';
 import ItemGrafic from '../../components/ItemGrafic';
+import Footer from '../../components/Footer';
 
 export default function Details() {
 
@@ -66,12 +67,11 @@ export default function Details() {
                         <HeaderPlayers>
                             <Title>Gráfico de quantidade de gols marcados por tempo de jogo  </Title>
                         </HeaderPlayers>
-
                         <ItemGrafic namePlayer={"Lionel Messi"} age={35} nacionality={"Argentino"} pathImage={"error"}/>
-
                     </Grafic>
                 </Container>
             </ContainerElements>
+            <Footer/>
         </ContainerDetails>
     )
 }

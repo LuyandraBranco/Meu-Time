@@ -4,17 +4,23 @@ import { Link } from 'react-router-dom';
 export const ContainerTeam = styled.div`
     
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+
 `;
 
-export const ContainerSelect = styled(ContainerTeam )`
+export const ContainerElements = styled(ContainerTeam)`
+    
+    height: 85vh;
+    margin: 4% 0;
+    
+`;
+
+export const ContainerSelect = styled(ContainerTeam)`
     
     width: 70%;
     height: 82vh;
     margin: 0 auto;
-    margin-top: 2%;
     border-radius: 0.2rem;
     justify-content: center;
     align-items: center;
@@ -22,7 +28,7 @@ export const ContainerSelect = styled(ContainerTeam )`
 
 `;
 
-export const TextArea = styled(ContainerTeam )`
+export const TextArea = styled(ContainerTeam)`
     
     width: 95%;
     height: 9rem;

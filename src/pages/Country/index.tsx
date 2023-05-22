@@ -45,6 +45,7 @@ export default function Country() {
                     </ItemSelect>
                 </ContainerSelect>
             </ContainerElements>
+            <Footer />
         </ContainerCountry>
     )
 }
