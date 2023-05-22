@@ -9,12 +9,16 @@ import {
     ContainerTraining,
     Training,
     ContainerResults,
-    Results
+    Results,
+    Container,
+    ContainerItem,
+    Grafic
 }
     from './styles';
 import Header from '../../components/Header';
 import ItemPlayer from '../../components/ItemPlayer';
 import ItemResult from '../../components/ItemResult';
+import ItemGrafic from '../../components/ItemGrafic';
 
 export default function Details() {
 
@@ -34,28 +38,39 @@ export default function Details() {
                         <ItemPlayer namePlayer={"Lionel Messi"} age={35} nacionality={"Argentino"} pathImage={"error"} />
                     </Players>
                 </ContainerPlayers>
+                <Container>
+                    <ContainerItem>
+                        <ContainerTraining>
+                            <HeaderPlayers>
+                                <Title>Formação mais utilizada</Title>
+                            </HeaderPlayers>
+                            <Training>
+                                <Title>4-4-3</Title>
+                            </Training>
+                        </ContainerTraining>
 
-                <ContainerTraining>
-                    <HeaderPlayers>
-                        <Title>Formação mais utilizada</Title>
-                    </HeaderPlayers>
-                    <Training>
-                        <Title>4-4-3</Title>
-                    </Training>
-                </ContainerTraining>
+                        <ContainerResults>
+                            <HeaderPlayers>
+                                <Title>Resultados</Title>
+                            </HeaderPlayers>
+                            <Results>
+                                <ItemResult nameResult={"Jogos"} numberResult={30} />
+                                <ItemResult nameResult={"Vitórias"} numberResult={28} />
+                                <ItemResult nameResult={"Derrotas"} numberResult={4} />
+                                <ItemResult nameResult={"Empates"} numberResult={4} />
+                            </Results>
+                        </ContainerResults>
+                    </ContainerItem>
 
-                <ContainerResults>
-                    <HeaderPlayers>
-                        <Title>Resultados</Title>
-                    </HeaderPlayers>
-                    <Results>
-                        <ItemResult nameResult={"Total de jogos"} numberResult={30}/>
-                        <ItemResult nameResult={"Total de vitórias"} numberResult={28}/>
-                        <ItemResult nameResult={"Total de derrotas"} numberResult={4}/>
-                        <ItemResult nameResult={"Total de empates"} numberResult={4}/>
-                    </Results>
-                </ContainerResults>
+                    <Grafic>
+                        <HeaderPlayers>
+                            <Title>Gráfico de quantidade de gols marcados por tempo de jogo  </Title>
+                        </HeaderPlayers>
 
+                        <ItemGrafic namePlayer={"Lionel Messi"} age={35} nacionality={"Argentino"} pathImage={"error"}/>
+
+                    </Grafic>
+                </Container>
             </ContainerElements>
         </ContainerDetails>
     )

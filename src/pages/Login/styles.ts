@@ -58,7 +58,7 @@ export const Logo = styled.h1`
     
 `;
 
-export const Description = styled.h2`
+export const Description = styled.h1`
 
    color: var(--green-500);
    font-weight: var(--font-weight-700);

@@ -9,6 +9,21 @@ export const ContainerDetails = styled.div`
 
 `;
 
+export const Container = styled.div`
+    
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+`;
+
+export const ContainerItem = styled.div`
+    
+    width: 100%;
+    height: 12rem;
+    display: flex;
+`;
+
 export const ContainerElements = styled.section`
     
     width: 89%;
@@ -16,7 +31,7 @@ export const ContainerElements = styled.section`
     margin: 0 auto;
     margin-top: 3%;
     display: flex;
-    background: #ddd;
+
 `;
 
 export const TitlePlayers = styled.h1`
@@ -37,12 +52,13 @@ export const ContainerPlayers = styled.aside`
     width: 35%;
     margin-right: 2%;
     heigth: 50rem;
+    border: 1px solid var(--gray-150);
 
 `;
 
 export const ContainerResults = styled(ContainerPlayers)`
 
-    width: 40%;
+    width: 50%;
     
 `;
 
@@ -50,9 +66,10 @@ export const ContainerResults = styled(ContainerPlayers)`
 
 export const ContainerTraining = styled.aside`
     
-    width: 20%;
-    height: 15rem;
+    width: 40%;
+    height: 12rem;
     margin-right: 4%;
+    border: 1px solid var(--gray-150);
 
 `;
 
@@ -62,7 +79,7 @@ export const HeaderPlayers = styled.div`
     
     width: 100%;
     height: 3rem;
-    border-bottom: 1px solid var(--gray-100);
+    border-bottom: 1px solid var(--gray-700);
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -105,5 +122,14 @@ export const Results = styled.div`
     justify-content: center;
     align-items: center;
 
+    
+`;
+
+export const Grafic = styled.div`
+    
+    width: 100%;
+    height: 30rem;
+    margin-top: 2%;
+    border: 1px solid var(--gray-150);
     
 `;

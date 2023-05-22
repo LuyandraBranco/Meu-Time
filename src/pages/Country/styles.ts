@@ -11,6 +11,17 @@ export const ContainerCountry = styled.div`
     
 `;
 
+export const ContainerElements = styled.div`
+    
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+
+
+    
+`;
+
 export const ContainerSelect = styled(ContainerCountry)`
     
     width: 50%;
