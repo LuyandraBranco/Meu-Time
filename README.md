@@ -1,9 +1,9 @@
 # Meu-Time
-  Meu Time é uma aplicação web que possibilita visualizar informações sobre ligas e copas ao redor do mundo sobre futebol
+   Meu Time é uma aplicação web que possibilita visualizar informações sobre ligas e copas ao redor do mundo sobre futebol
 # Como rodar o projeto Meu-Time em ambiente local
    Este documento descreve os passos necessários para rodar o projeto Meu Time em ambiente local. O projeto é baseado em React+TypeScript:
-       Node.js: https://nodejs.org/en/download/
-       NPM (versão 1 ou superior): https://www.npmjs.com/get-npm
+         Node.js: https://nodejs.org/en/download/
+         NPM (versão 1 ou superior): https://www.npmjs.com/get-npm
 # Instalação
    1. Clone o repositório do projeto em sua máquina usando o seguinte comando:
         ```sh git clone https://github.com/LuyandraBranco/Meu-Time ```
