@@ -13,6 +13,14 @@ export const ContainerElements = styled(ContainerTeam)`
     
     height: 85vh;
     margin: 4% 0;
+
+    @media screen and (max-width: 680px) {
+        height: 90vh;
+    }
+
+    @media (min-width: 681px) and (max-width: 992px) {      
+        
+    }
     
 `;
 
@@ -26,6 +34,17 @@ export const ContainerSelect = styled(ContainerTeam)`
     align-items: center;
     box-shadow: 0 0 4px var(--green-500);
 
+    @media screen and (max-width: 680px) {
+        width: 95%;
+        box-shadow: none;
+    }
+
+    @media (min-width: 681px) and (max-width: 992px) {      
+        width: 90%;
+        box-shadow: none;
+    }
+
+
 `;
 
 export const TextArea = styled(ContainerTeam)`
@@ -35,6 +54,10 @@ export const TextArea = styled(ContainerTeam)`
     justify-content: center;
     align-items: center;
     margin-top: 3%;
+
+    @media screen and (max-width: 680px) {
+        height: 15.5rem;
+    }
 
 `;
 
@@ -79,5 +102,12 @@ export const Table = styled.div`
    margin: 0 auto;
    margin: 2rem 0;
    overflow-y: scroll;
+
+   @media screen and (max-width: 680px) {
+        width: 95%;
+        margin-top: 3.5rem;
+   }
+
+
 `;
 
