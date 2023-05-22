@@ -1,34 +1,45 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 
-//Tipagem
-export interface CounterState {
-  value: number
+export interface User {
+    api_key: string
+    country: string
+    league: string
+    team: string
+    season: string
 }
 
-//Inicialização
-const initialState: CounterState = {
-  value: 0,
+const initialState: User = {
+    api_key: '',
+    country: '',
+    league: '',
+    team: '',
+    season: '22/23',
 }
 
-
-export const counterSlice = createSlice({
-  name: 'counter',
-  initialState,
-  reducers: {
-    increment: (state) => {
-      state.value += 1
+export const userSlice = createSlice({
+    name: 'user',
+    initialState,
+    reducers: {
+        setApiKey: (state, action: PayloadAction<string>) => {
+            state.api_key = action.payload;
+        },
+        setCountry: (state, action: PayloadAction<string>) => {
+            state.country = action.payload;
+        },
+        setLeague: (state, action: PayloadAction<string>) => {
+            state.league = action.payload;
+        },
+        setTeam: (state, action: PayloadAction<string>) => {
+            state.team = action.payload;
+        },
+        setSeason: (state, action: PayloadAction<string>) => {
+            state.season = action.payload;
+        },
     },
-    decrement: (state) => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload
-    },
-  },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { setApiKey, setCountry, setLeague, setTeam, setSeason } = userSlice.actions
 
-export default counterSlice.reducer
+export default userSlice.reducer

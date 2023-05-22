@@ -16,9 +16,14 @@ import {
     from './styles';
 
 import { IoIosFootball } from 'react-icons/io';
+import type { RootState } from '../../redux/store';
+import { useSelector, useDispatch } from 'react-redux'
+import { setApiKey, setCountry, setLeague, setTeam, setSeason } from '../../redux/slice';
 
 export default function Login() {
 
+    const user = useSelector((state: RootState) => state.user);
+    const dispatch = useDispatch();
     return (
         <ContainerLogin>
             <ContainerLogo>
@@ -30,7 +35,7 @@ export default function Login() {
             </ContainerLogo>
             <Form>
                 <Title>SIGN IN</Title>
-                <Input type="text" placeholder='Digite a sua key' required/>
+                <Input type="text" placeholder='Digite a sua key' required />
                 <Button><HyperLink to="/Country">Entrar</HyperLink></Button>
                 <Span>Não tem uma conta? <HyperLink1 href="https://dashboard.api-football.com/register">Registre-se</HyperLink1></Span>
             </Form>

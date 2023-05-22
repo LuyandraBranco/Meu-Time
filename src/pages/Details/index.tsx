@@ -20,9 +20,15 @@ import ItemPlayer from '../../components/ItemPlayer';
 import ItemResult from '../../components/ItemResult';
 import ItemGrafic from '../../components/ItemGrafic';
 import Footer from '../../components/Footer';
+import type { RootState } from '../../redux/store';
+import { useSelector, useDispatch } from 'react-redux'
+import { setApiKey, setCountry, setLeague, setTeam, setSeason } from '../../redux/slice';
 
 export default function Details() {
 
+    const user = useSelector((state: RootState) => state.user);
+    const dispatch = useDispatch();
+    
     return (
         <ContainerDetails>
             <Header />

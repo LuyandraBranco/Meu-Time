@@ -17,9 +17,14 @@ import Footer from '../../components/Footer';
 import {
     AiOutlineArrowLeft
 } from 'react-icons/ai';
+import type { RootState } from '../../redux/store';
+import { useSelector, useDispatch } from 'react-redux'
+import { setApiKey, setCountry, setLeague, setTeam, setSeason } from '../../redux/slice';
 
 
 export default function Team() {
+    const user = useSelector((state: RootState) => state.user);
+    const dispatch = useDispatch();
 
     return (
         <ContainerTeam>
