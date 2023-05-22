@@ -74,6 +74,10 @@ export const ItemSelect = styled(ContainerLeague)`
     align-items: center;
     flex-direction: row;
 
+    @media screen and (max-width: 680px) {
+        flex-direction: column;
+     }
+
 `;
 
 export const Select = styled.select`
