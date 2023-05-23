@@ -47,8 +47,21 @@ export default function Login() {
     //   }, []);
 
     useEffect(() => {
-
-    })
+        fetch("https://v3.football.api-sports.io/fixtures?live=all", {
+            method: "GET",
+            headers: {
+                "x-rapidapi-key": "87572d1a8af8f5edc68a45528972a704",
+                "x-rapidapi-host": "v3.footbal.api-sports.io",
+            }, 
+        })
+        .then((response)=>response.json())
+        .then((data)=>{
+            console.log(data.response);
+            setMatch(data.response);
+        })
+        .catch((error)=> console.log("error", error));
+        },[]);
+    
 
     return (
         <ContainerLogin>
