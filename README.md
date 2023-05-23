@@ -22,5 +22,5 @@
    ```sh 
       npm run dev 
    ```
-      Este comando abrirá o projecto no terminal e basta clicar no link fornecido pra abrir no navegador
+   Este comando abrirá o projecto no terminal e basta clicar no link fornecido pra abrir no navegador
 
