@@ -18,7 +18,8 @@ import {
 import { IoIosFootball } from 'react-icons/io';
 import { useEffect, useState } from 'react';
 import type { RootState } from '../../redux/store';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import { setApiKey, setCountry, setLeague, setTeam, setSeason } from '../../redux/slice';
 
 export default function Login() {
@@ -28,40 +29,32 @@ export default function Login() {
     const [key, setKey] = useState('');
     const [match, setMatch] = useState('');
     const [apiKey, setApiKey] = useState("");
+    const history = useHistory();
 
-    // useEffect(() => {
-    //     const myHeaders: Headers = new Headers();
-    //     myHeaders.append("x-rapidapi-key", "93ed10621cmshf220f4ab717894ap12cdd6jsn592ea1dbd87f");
-    //     myHeaders.append("x-rapidapi-host", "api-football-v1.p.rapidapi.com");
-
-    //     const requestOptions: RequestInit = {
-    //       method: 'GET',
-    //       headers: myHeaders,
-    //       redirect: 'follow'
-    //     };
-
-    //     fetch("https://api-football-v1.p.rapidapi.com/GET/v3/leagues", requestOptions)
-    //       .then(response => response.text())
-    //       .then(result => console.log(result))
-    //       .catch(error => console.log('error', error));
-    //   }, []);
-
-    useEffect(() => {
+    const fetchData = () => {
         fetch("https://v3.football.api-sports.io/fixtures?live=all", {
             method: "GET",
             headers: {
-                "x-rapidapi-key": "87572d1a8af8f5edc68a45528972a704",
+                "x-rapidapi-key": apiKey,
                 "x-rapidapi-host": "v3.footbal.api-sports.io",
-            }, 
+            },
         })
-        .then((response)=>response.json())
-        .then((data)=>{
-            console.log(data.response);
-            setMatch(data.response);
-        })
-        .catch((error)=> console.log("error", error));
-        },[]);
-    
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data.response);
+                setMatch(data.response);
+            })
+            .catch((error) => alert("Chave da Api Key inválida"));
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        fetchData(); // Executa a função fetchData novamente ao clicar no botão do formulário
+    };
 
     return (
         <ContainerLogin>
@@ -72,7 +65,7 @@ export default function Login() {
                 </ItemLogo>
                 <Description>Desvende o mundo do futebol em um clique</Description>
             </ContainerLogo>
-            <Form>
+            <Form onSubmit={handleFormSubmit}>
                 <Title>SIGN IN</Title>
                 <Input
                     value={apiKey}
@@ -80,7 +73,7 @@ export default function Login() {
                     type="text"
                     placeholder='Digite a sua key'
                     required />
-                <HyperLink to="/Country"><Button>Entrar</Button></HyperLink>
+                <Button type="submit">Entrar</Button>
 
                 <Span>Não tem uma conta? <HyperLink1 href="https://dashboard.api-football.com/login">Registre-se</HyperLink1></Span>
             </Form>

@@ -46,7 +46,7 @@ export default function Country() {
                             <Option>--Selecione o país</Option>
                         </Select>
                         <Button>
-                            <HyperLink to="/League">GITSeguinte </HyperLink>
+                            <HyperLink to="/League">Seguinte </HyperLink>
                             <AiOutlineArrowRight />
                         </Button>
                     </ItemSelect>
