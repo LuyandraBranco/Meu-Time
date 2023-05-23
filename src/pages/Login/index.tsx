@@ -28,7 +28,8 @@ export default function Login() {
     const dispatch = useDispatch();
     const [key, setKey] = useState('');
     const [match, setMatch] = useState('');
-    const [apiKey, setApiKey] = useState("");
+    const [apiKey, setApiKey1] = useState("");
+    const [loggedIn, setLoggedIn] = useState(false);
     const history = useHistory();
 
     const fetchData = () => {
@@ -43,18 +44,23 @@ export default function Login() {
             .then((data) => {
                 console.log(data.response);
                 setMatch(data.response);
+                history.push("/Country");
             })
             .catch((error) => alert("Chave da Api Key inválida"));
     };
 
     useEffect(() => {
-        fetchData();
+        
     }, []);
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
         fetchData(); // Executa a função fetchData novamente ao clicar no botão do formulário
     };
+
+    // if (loggedIn) {
+    //     return <Redirect to="/Country"/>;
+    // }
 
     return (
         <ContainerLogin>
@@ -69,7 +75,7 @@ export default function Login() {
                 <Title>SIGN IN</Title>
                 <Input
                     value={apiKey}
-                    onChange={(e) => setApiKey(e.target.value)}
+                    onChange={(e) => setApiKey1(e.target.value)}
                     type="text"
                     placeholder='Digite a sua key'
                     required />
