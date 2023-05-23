@@ -18,7 +18,7 @@
        npm install
     ```  
 # Rodando o projecto
-   4. Para rodar o projeto, execute o seguinte comando:
+4. Para rodar o projeto, execute o seguinte comando:
    ```sh 
       npm run dev 
    ```
