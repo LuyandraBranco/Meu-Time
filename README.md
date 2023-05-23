@@ -1,7 +1,7 @@
 # Meu-Time
    Meu Time é uma aplicação web que possibilita visualizar informações sobre ligas e copas ao redor do mundo sobre futebol
 # Como rodar o projeto Meu-Time em ambiente local
-   Este documento descreve os passos necessários para rodar o projeto Meu Time em ambiente local. O projeto é baseado em React+TypeScript:
+   Este documento descreve os passos necessários para rodar o projeto Meu Time em ambiente local. O projeto é baseado em React+TypeScript:<br>
       *  Node.js: https://nodejs.org/en/download/<br>
       *  NPM (versão 1 ou superior): https://www.npmjs.com/get-npm <br>
 # Instalação
