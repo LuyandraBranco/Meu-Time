@@ -13,7 +13,7 @@
    ```sh 
       cd meu-time
    ```
-   3. Instale as dependências do projeto usando o NPM:
+   3. Instale as dependências do projeto usando o NPM:<br>
     ```sh 
        npm install
     ```      
