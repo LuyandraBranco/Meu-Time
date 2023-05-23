@@ -33,20 +33,20 @@ export default function Login() {
     //     const myHeaders: Headers = new Headers();
     //     myHeaders.append("x-rapidapi-key", "93ed10621cmshf220f4ab717894ap12cdd6jsn592ea1dbd87f");
     //     myHeaders.append("x-rapidapi-host", "api-football-v1.p.rapidapi.com");
-    
+
     //     const requestOptions: RequestInit = {
     //       method: 'GET',
     //       headers: myHeaders,
     //       redirect: 'follow'
     //     };
-    
+
     //     fetch("https://api-football-v1.p.rapidapi.com/GET/v3/leagues", requestOptions)
     //       .then(response => response.text())
     //       .then(result => console.log(result))
     //       .catch(error => console.log('error', error));
     //   }, []);
 
-    useEffect(()=>{
+    useEffect(() => {
 
     })
 
@@ -67,8 +67,8 @@ export default function Login() {
                     type="text"
                     placeholder='Digite a sua key'
                     required />
-                <Button type="submit"><HyperLink to="/Country">Entrar</HyperLink></Button>
-                
+                <HyperLink to="/Country"><Button>Entrar</Button></HyperLink>
+
                 <Span>Não tem uma conta? <HyperLink1 href="https://dashboard.api-football.com/login">Registre-se</HyperLink1></Span>
             </Form>
         </ContainerLogin>

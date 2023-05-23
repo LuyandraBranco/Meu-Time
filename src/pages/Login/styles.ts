@@ -123,9 +123,11 @@ export const Button = styled.button`
 
 export const HyperLink = styled(Link)`
 
+    width: 80%;
     text-decoration: none;    
     color:  var(--white);
     font-weight: var(--font-weight-500);
+    text-align: center;
 
 `;
 
