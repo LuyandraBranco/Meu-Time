@@ -26,25 +26,29 @@ export default function Login() {
     const user = useSelector((state: RootState) => state.user);
     const dispatch = useDispatch();
     const [key, setKey] = useState('');
-    const [math, setMatch] = useState('');
+    const [match, setMatch] = useState('');
     const [apiKey, setApiKey] = useState("");
+
+    // useEffect(() => {
+    //     const myHeaders: Headers = new Headers();
+    //     myHeaders.append("x-rapidapi-key", "93ed10621cmshf220f4ab717894ap12cdd6jsn592ea1dbd87f");
+    //     myHeaders.append("x-rapidapi-host", "api-football-v1.p.rapidapi.com");
     
-    useEffect(() => {
-        const myHeaders: Headers = new Headers();
-        myHeaders.append("x-rapidapi-key", "93ed10621cmshf220f4ab717894ap12cdd6jsn592ea1dbd87f");
-        myHeaders.append("x-rapidapi-host", "api-football-v1.p.rapidapi.com");
+    //     const requestOptions: RequestInit = {
+    //       method: 'GET',
+    //       headers: myHeaders,
+    //       redirect: 'follow'
+    //     };
     
-        const requestOptions: RequestInit = {
-          method: 'GET',
-          headers: myHeaders,
-          redirect: 'follow'
-        };
-    
-        fetch("https://api-football-v1.p.rapidapi.com/GET/v3/leagues", requestOptions)
-          .then(response => response.text())
-          .then(result => console.log(result))
-          .catch(error => console.log('error', error));
-      }, []);
+    //     fetch("https://api-football-v1.p.rapidapi.com/GET/v3/leagues", requestOptions)
+    //       .then(response => response.text())
+    //       .then(result => console.log(result))
+    //       .catch(error => console.log('error', error));
+    //   }, []);
+
+    useEffect(()=>{
+
+    })
 
     return (
         <ContainerLogin>
@@ -65,7 +69,7 @@ export default function Login() {
                     required />
                 <Button type="submit"><HyperLink to="/Country">Entrar</HyperLink></Button>
                 
-                <Span>Não tem uma conta? <HyperLink1 href="https://rapidapi.com/developer/dashboard">Registre-se</HyperLink1></Span>
+                <Span>Não tem uma conta? <HyperLink1 href="https://dashboard.api-football.com/login">Registre-se</HyperLink1></Span>
             </Form>
         </ContainerLogin>
     )
