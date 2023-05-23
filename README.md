@@ -14,10 +14,8 @@
       cd meu-time
    ```
    3. Instale as dependências do projeto usando o NPM:
- 
-    ```sh 
-       npm install
-    ```  
+   
+                  npm install
 # Rodando o projecto
 4. Para rodar o projeto, execute o seguinte comando:
    ```sh 
