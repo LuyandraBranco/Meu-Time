@@ -51,7 +51,7 @@ export default function Login() {
                     history.push("/Country")
                 }
             })
-            .catch((error) => alert("Chave da Api Key inválida"));
+            .catch((error) => console.log("error", error));
     };
 
     useEffect(() => {
@@ -60,12 +60,8 @@ export default function Login() {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        fetchData(); // Executa a função fetchData novamente ao clicar no botão do formulário
+        fetchData(); 
     };
-
-    // if (loggedIn) {
-    //     return <Redirect to="/Country"/>;
-    // }
 
     return (
         <ContainerLogin>
