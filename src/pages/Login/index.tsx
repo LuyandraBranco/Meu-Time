@@ -45,9 +45,10 @@ export default function Login() {
                 console.log(data.response);
                 setMatch(data.response);
                 if(data.response.length == 0){
-                    alert("Chave da Api Key inválida");
+                    alert("Api Key inválida");
                 }
                 else{
+                    dispatch(setApiKey(apiKey));
                     history.push("/Country")
                 }
             })

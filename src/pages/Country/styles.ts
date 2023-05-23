@@ -112,7 +112,6 @@ export const Button = styled.button`
         width: 90%;
     }
    
-    
 `;
 
 export const HyperLink = styled(Link)`

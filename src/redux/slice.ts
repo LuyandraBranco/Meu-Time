@@ -3,7 +3,7 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 
 export interface User {
     api_key: string
-    country: string
+    country: number
     league: string
     team: string
     season: string
@@ -11,7 +11,7 @@ export interface User {
 
 const initialState: User = {
     api_key: '',
-    country: '',
+    country: 0,
     league: '',
     team: '',
     season: '22/23',
@@ -24,7 +24,7 @@ export const userSlice = createSlice({
         setApiKey: (state, action: PayloadAction<string>) => {
             state.api_key = action.payload;
         },
-        setCountry: (state, action: PayloadAction<string>) => {
+        setCountry: (state, action: PayloadAction<number>) => {
             state.country = action.payload;
         },
         setLeague: (state, action: PayloadAction<string>) => {

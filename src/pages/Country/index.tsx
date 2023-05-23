@@ -25,8 +25,33 @@ import { useEffect, useState } from 'react';
 export default function Country() {
     const user = useSelector((state: RootState) => state.user);
     const dispatch = useDispatch();
-    const [country, setCountry]= useState(null);
+    const [countries, setCountries] = useState([]);
 
+    const fetchData = () => {
+        fetch("https://v3.football.api-sports.io/countries", {
+            method: "GET",
+            headers: {
+                "x-rapidapi-key": user?.api_key,
+                "x-rapidapi-host": "v3.footbal.api-sports.io",
+            },
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data.response);
+                setCountries(data.response);
+
+            })
+            .catch((error) => console.log("error", error));
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    function handleCountryClick(countryId) {
+        dispatch(setCountry(countryId));
+    }
+    
     return (
         <ContainerCountry>
             <Header />
@@ -42,6 +67,10 @@ export default function Country() {
                     </TextArea>
                     <ItemSelect>
                         <Select>
+                            {countries.map(country => (
+                                <Option key={country.id} onClick={() => handleCountryClick(country.id)}>{country.name}</Option>
+                            ))
+                        }
                             <Option>--Selecione o país</Option>
                             <Option>--Selecione o país</Option>
                         </Select>
