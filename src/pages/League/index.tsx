@@ -23,13 +23,35 @@ import {
     AiOutlineArrowLeft
 } from 'react-icons/ai';
 import type { RootState } from '../../redux/store';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux';
+import axios from 'axios';
 import { setApiKey, setCountry, setLeague, setTeam, setSeason } from '../../redux/slice';
+import { useEffect, useState } from 'react';
 
 export default function League() {
 
     const user = useSelector((state: RootState) => state.user);
     const dispatch = useDispatch();
+    const [leagues, setLeagues] = useState([]);
+    useEffect(() => {
+        axios.get("https://v3.football.api-sports.io/leagues", {
+            headers: {
+                "x-rapidapi-host": "v3.football.api-sports.io",
+                "x-rapidapi-key": user?.api_key,
+            }
+        })
+            .then(response => {
+                const filteredLeagues = response.data.response.filter(league => league.country.id === user?.country);
+                setLeagues(filteredLeagues);
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }, []);
+
+    function handleLeagueClick(leagueId) {
+        dispatch(setLeague(leagueId));
+    }
 
     return (
         <ContainerLeague>
@@ -49,7 +71,9 @@ export default function League() {
                     <ItemSelect>
                         <Select>
                             <Option>--Selecione a liga</Option>
-                            <Option>--Selecione a liga</Option>
+                            {leagues.map(league => (
+                                <Option key={league.id} onClick={() => handleLeagueClick(league.id)}>{league.name}</Option>
+                            ))}
                         </Select>
                         <Button>
                             <HyperLink to="/Team">Seguinte </HyperLink>
@@ -61,7 +85,7 @@ export default function League() {
                     </Back>
                 </ContainerSelect>
             </ContainerElements>
-            <Footer/>
+            <Footer />
         </ContainerLeague>
     )
 }

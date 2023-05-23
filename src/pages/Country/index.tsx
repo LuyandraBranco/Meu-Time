@@ -51,7 +51,7 @@ export default function Country() {
     function handleCountryClick(countryId) {
         dispatch(setCountry(countryId));
     }
-    
+
     return (
         <ContainerCountry>
             <Header />
@@ -67,12 +67,11 @@ export default function Country() {
                     </TextArea>
                     <ItemSelect>
                         <Select>
+                            <Option>--Selecione o país</Option>
                             {countries.map(country => (
                                 <Option key={country.id} onClick={() => handleCountryClick(country.id)}>{country.name}</Option>
                             ))
-                        }
-                            <Option>--Selecione o país</Option>
-                            <Option>--Selecione o país</Option>
+                            }
                         </Select>
                         <Button>
                             <HyperLink to="/League">Seguinte </HyperLink>
