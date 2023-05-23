@@ -68,7 +68,6 @@ export default function Details() {
                             </Results>
                         </ContainerResults>
                     </ContainerItem>
-
                     <Grafic>
                         <HeaderPlayers>
                             <Title>Gráfico de quantidade de gols marcados por tempo de jogo  </Title>

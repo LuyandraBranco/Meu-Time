@@ -18,7 +18,16 @@ export const ItemLogo = styled.div`
     >svg{
         color: var( --white);
         font-size: 3rem;
-        margin: 0 0 0 8rem;
+        margin: -1% 0 0 8rem;
+
+        @media screen and (max-width: 680px) {
+            width: 95%;
+            margin: 0 0 0 3rem;
+        }
+    
+        @media (min-width: 681px) and (max-width: 992px) {      
+            margin: 0 0 0 6rem;
+        }
     }
 
 `;

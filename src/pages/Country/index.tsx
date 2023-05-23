@@ -20,10 +20,12 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import type { RootState } from '../../redux/store';
 import { useSelector, useDispatch } from 'react-redux'
 import { setApiKey, setCountry, setLeague, setTeam, setSeason } from '../../redux/slice';
+import { useEffect, useState } from 'react';
 
 export default function Country() {
     const user = useSelector((state: RootState) => state.user);
     const dispatch = useDispatch();
+    const [country, setCountry]= useState(null);
 
     return (
         <ContainerCountry>
