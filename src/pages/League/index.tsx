@@ -61,8 +61,8 @@ export default function League() {
                     <TextArea>
                         <Title>Selecione a liga</Title>
                         <Description>
-                            Nossa plataforma oferece cobertura completa da Liga
-                            [Nome da Liga], permitindo que os fãs acompanhem
+                            Nossa plataforma oferece cobertura completa das Ligas
+                           , permitindo que os fãs acompanhem
                             de perto cada rodada, resultados,
                             classificação, estatísticas
                             e informações detalhadas sobre os times e jogadores.

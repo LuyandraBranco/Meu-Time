@@ -52,6 +52,7 @@ export default function Country() {
         dispatch(setCountry(countryId));
     }
 
+    console.log(user?.api_key);
     return (
         <ContainerCountry>
             <Header />
@@ -69,7 +70,12 @@ export default function Country() {
                         <Select>
                             <Option>--Selecione o país</Option>
                             {countries.map(country => (
-                                <Option key={country.id} onClick={() => handleCountryClick(country.id)}>{country.name}</Option>
+                                <Option
+                                    key={country.id}
+                                    onClick={() => handleCountryClick(country.id)}
+                                >
+                                    {country.name}
+                                </Option>
                             ))
                             }
                         </Select>
