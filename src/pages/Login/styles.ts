@@ -89,11 +89,13 @@ export const Description = styled.h1`
 
    color: var(--green-500);
    font-weight: var(--font-weight-700);
+   margin-left: 10.9%;
 
    @media screen and (max-width: 680px) {
         margin-bottom: 5%;
         font-size: 1.6rem;
         text-align: center;
+        margin-left: 0%;
     }
    
 `;

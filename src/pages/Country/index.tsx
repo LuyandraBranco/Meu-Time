@@ -10,7 +10,8 @@ import {
     Select,
     Option,
     Button,
-    HyperLink
+    HyperLink,
+    Image
 
 }
     from './styles';
@@ -19,13 +20,20 @@ import Footer from '../../components/Footer';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import type { RootState } from '../../redux/store';
 import { useSelector, useDispatch } from 'react-redux'
-import { setApiKey, setCountry, setLeague, setTeam, setSeason } from '../../redux/slice';
+import { setCountry } from '../../redux/slice';
 import { useEffect, useState } from 'react';
 
+interface Country {
+    code: string;
+    name: string;
+    flag: string;
+}
+
 export default function Country() {
+
     const user = useSelector((state: RootState) => state.user);
     const dispatch = useDispatch();
-    const [countries, setCountries] = useState([]);
+    const [countries, setCountries] = useState<Country[]>([]);
 
     const fetchData = () => {
         fetch("https://v3.football.api-sports.io/countries", {
@@ -39,7 +47,6 @@ export default function Country() {
             .then((data) => {
                 console.log(data.response);
                 setCountries(data.response);
-
             })
             .catch((error) => console.log("error", error));
     };
@@ -51,7 +58,6 @@ export default function Country() {
     function handleCountryClick(countryId) {
         dispatch(setCountry(countryId));
     }
-
     console.log(user?.api_key);
     return (
         <ContainerCountry>
@@ -71,9 +77,10 @@ export default function Country() {
                             <Option>--Selecione o país</Option>
                             {countries.map(country => (
                                 <Option
-                                    key={country.id}
-                                    onClick={() => handleCountryClick(country.id)}
+                                    key={country.code}
+                                    onClick={() => handleCountryClick(country.code)}
                                 >
+                                    <Image src={country.flag} />
                                     {country.name}
                                 </Option>
                             ))

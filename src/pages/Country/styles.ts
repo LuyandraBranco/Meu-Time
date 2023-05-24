@@ -120,3 +120,11 @@ export const HyperLink = styled(Link)`
     color:  var(--white);
 
 `;
+
+export const Image = styled.img`
+
+    width: 3rem;
+    height: 3rem;
+
+`;
+

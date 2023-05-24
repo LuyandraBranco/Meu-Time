@@ -10,14 +10,15 @@ import {
     from './styles';
 
 
-export default function ItemTable({nameTeam,pathImage}) {
+export default function ItemTable({nameTeam,pathImage, functionn}) {
     {
-        let nameTeam: String;
-        let pathImage: String;
+        let nameTeam: string;
+        let pathImage: string;
+        let functionn: any;
     }
 
     return (
-        <Container>
+        <Container onClick={functionn}>
             <ContainerImage>
                 {/* <Image src={pathImage} alt='Image Team'/> */}
             </ContainerImage>
